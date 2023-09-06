@@ -1,0 +1,82 @@
+/* Body Styles */
+body {
+  font-family: arial;
+  font-size: 16px;
+  margin: 0;
+  background:black ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Image Styles */
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Container Styles */
+.name1 {
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(#111 50%, #000 100%);
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  margin: 20px;
+}
+
+.name1 img {
+  transform: scale(1.3);
+  transition: all 0.3s ease-out;
+}
+
+.name1:hover img {
+  transform: scale(1.1) translateY(-20px);
+  opacity: 0.3;
+}
+
+/* Description Styles */
+.description {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+}
+
+.description h3 {
+  font-weight: 700;
+  font-size: 32px;
+  margin: 0 0 20px;
+  text-align: center;
+  opacity: 0;
+}
+
+.description p {
+  opacity: 0;
+}
+
+.description a {
+  color: #fff;
+  background: black;
+  display: inline-block;
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  opacity: 0;
+}
+
+.description a:hover {
+  background: orange;
+}
+
+.name1:hover .description h3,
+.name1:hover .description p,
+.name1:hover .description a {
+  opacity: 1;
+}
